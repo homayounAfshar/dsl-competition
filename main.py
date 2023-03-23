@@ -1,10 +1,5 @@
 #%% readme!
-# 1. We intentionally disabled the preprocessing part. This is done because it
-#    includes data augmentation, which takes almost 10 minutes to finish. For
-#    this reason, we already placed the preprocessed files in
-#    "./dsl_data/batches/" directory. However, you can manually activate the
-#    preprocessing part in the lines below. If so, please make sure the "audio"
-#    directory exists in the "dsl_data" directory.
+# 1. Please make sure the "audio" directory exists in the "dsl_data" directory.
 # 2. In the network, Torch library uses CUDA. Therefore, please make sure that
 #    CUDA is available. Otherwise, training takes years to get done!
 # 3. The output of this code is a graph illustrating accuracy vs. epoch during
@@ -26,8 +21,8 @@ extraFunctions.installReq(folderBase)
 extraFunctions.preparation(folderBase)
 
 #%% prerocessing
-# extraFunctions.preprocessDev(folderBase)
-# extraFunctions.preprocessEval(folderBase)
+extraFunctions.preprocessDev(folderBase)
+extraFunctions.preprocessEval(folderBase)
 
 #%% development
 extraFunctions.develop(folderBase)
