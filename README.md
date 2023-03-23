@@ -16,6 +16,9 @@ The dataset consists in a collection of audio file in a WAV format. Each record 
 * gender: the gender of the speaker.
 * ageRange: the age range of the speaker.
 
+The dataset is located at:
+https://drive.google.com/file/d/1gUPpqPTlgfzIyDU4eG6t5HoTlK5inLO4/view?usp=sharing
+
 Accoddingly, an intent is given by the combination of an action with an object, therefore the information in the two respective columns must be combined to obtain the label to be used to address this task. The way this information should be combined is a simple string concatenation (e.g., if the action is “increase” and the object is “volume”, the corresponding intent will be “increasevolume”). Within the archive, you will find the following elements:
 * audio: a folder containing all the audio files in WAV format.
 * development.csv (development set): a comma-separated values file containing the records from
