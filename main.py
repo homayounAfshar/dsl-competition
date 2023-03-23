@@ -1,5 +1,7 @@
 #%% readme!
-# 1. Please make sure the "audio" directory exists in the "dsl_data" directory.
+# 1. To run the code, please download dsl_data.zip and unzip it in a folder
+#    named "dsl_data". Also, make sure the "audio" directory exists in the
+#    "dsl_data" directory.
 # 2. In the network, Torch library uses CUDA. Therefore, please make sure that
 #    CUDA is available. Otherwise, training takes years to get done!
 # 3. The output of this code is a graph illustrating accuracy vs. epoch during
