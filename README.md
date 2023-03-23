@@ -15,6 +15,7 @@ The dataset consists in a collection of audio file in a WAV format. Each record 
 * Current language used for work/school: the main language spoken by the speaker during daily activities.
 * gender: the gender of the speaker.
 * ageRange: the age range of the speaker.
+
 Accoddingly, an intent is given by the combination of an action with an object, therefore the information in the two respective columns must be combined to obtain the label to be used to address this task. The way this information should be combined is a simple string concatenation (e.g., if the action is “increase” and the object is “volume”, the corresponding intent will be “increasevolume”). Within the archive, you will find the following elements:
 * audio: a folder containing all the audio files in WAV format.
 * development.csv (development set): a comma-separated values file containing the records from
